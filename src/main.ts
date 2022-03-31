@@ -17,11 +17,9 @@ export const vlad: User = {
 }
 
 const showInfo = (user: User): string => {
-  return `This is ${user.name}. ${user.gender === 'male' ? 'He' : 'She'} is ${
-    user.age
-  } and ${user.gender === 'male' ? 'he' : 'she'} ${
-    user.isMarried ? 'is' : 'is not'
-  } married.`
+  return `This is ${user.name}. ${user.gender === 'male' ? 'He' : 'She'} is ${user.age
+    } and ${user.gender === 'male' ? 'he' : 'she'} ${user.isMarried ? 'is' : 'is not'
+    } married.`
 }
 
 export default showInfo
