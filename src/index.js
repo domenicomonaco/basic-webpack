@@ -6,6 +6,8 @@ import exampleImg from './assets/example.svg'
 
 import 'bootstrap';
 import 'jquery';
+import '@fortawesome/fontawesome-free';
+
 
 const exlImg = document.getElementById('main-img')
 exlImg.src = exampleImg
