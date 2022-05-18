@@ -1,17 +1,9 @@
-import { vlad } from './main'
-import showInfo from './main'
+/** SCSS and CSS imports **/
 import './styles/main.scss'
-import './styles/style.css'
-import exampleImg from './assets/example.svg'
+import './styles/main.css';
 
-import 'bootstrap';
-import 'jquery';
-import '@fortawesome/fontawesome-free';
+/** Vendor's imports **/
+import './js/vendors.import';
 
 
-const exlImg = document.getElementById('main-img')
-exlImg.src = exampleImg
-exlImg.width = '200'
-
-const exlTitle = document.getElementById('title')
-exlTitle.textContent = showInfo(vlad)
+/** here your code **/
