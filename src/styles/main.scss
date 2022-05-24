@@ -1,9 +1,1 @@
-$color: darkgrey;
-body {
-    color: $color;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+@import './vendors.import.scss';
