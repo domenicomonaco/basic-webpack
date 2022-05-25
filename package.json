@@ -1,4 +1,13 @@
 {
+    "title": "Web Pack Boilerplate",
+    "name": "minimalist-webpack-boilerplate",
+    "version": "1.0.0",
+    "homepage": "https://",
+    "license": "MIT", 
+    "author": "Domenico Monaco (https://blog.domenicomonaco.it)",
+    "contributors": [
+        "Tecnologie per Persone (https://www.tecnologieperpersone.it)"
+    ],
     "private": "true",
     "scripts": {
         "watch": "webpack --watch",
@@ -16,12 +25,15 @@
         "@babel/preset-env": "^7.17.12",
         "@popperjs/core": "^2.11.5",
         "babel-loader": "^8.2.5",
-        "bootstrap": "^5.1.3",
+        "bootstrap": "^4.6.1",
+        "jquery": "^3.6.0",
+        "moment": "^2.29.2",
+        "moment-timezone": "^0.5.34",
+        "popper.js": "^1.16.1",
         "bootstrap-icons": "^1.8.2",
         "css-loader": "^6.7.1",
         "html-loader": "^3.1.0",
         "html-webpack-plugin": "^5.5.0",
-        "jquery": "^3.6.0",
         "mini-css-extract-plugin": "^2.6.0",
         "postcss": "^8.4.13",
         "postcss-loader": "^6.2.1",

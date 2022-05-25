@@ -13,6 +13,9 @@ module.exports = {
     entry: {
         bundle: path.resolve(__dirname, 'src/index.js'),
     },
+
+    stats: { warnings: true },
+
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js',
@@ -41,12 +44,24 @@ module.exports = {
             },
             {
                 test: /\.(s[ac]|c)ss$/i,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader',
-                ],
+                use: [{
+                        loader: 'style-loader', // inject CSS to page
+                    },
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    }, {
+                        loader: 'css-loader', // translates CSS into CommonJS modules
+                    }, {
+                        loader: 'postcss-loader', // Run post css actions
+                        options: {
+                            postcssOptions: {
+                                plugins: []
+                            }
+                        }
+                    }, {
+                        loader: 'sass-loader' // compiles Sass to CSS
+                    }
+                ]
             },
             {
                 test: /\.(png|jpg|jpeg|svg|gif|ico|webp)$/i,
@@ -71,6 +86,9 @@ module.exports = {
     ],
     devtool: 'inline-source-map',
     devServer: {
+        client: {
+            overlay: false
+        },
         static: {
             directory: path.resolve(__dirname, 'dist'),
         },
