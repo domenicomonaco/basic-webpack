@@ -3,12 +3,11 @@
     "name": "minimalist-webpack-boilerplate",
     "version": "1.0.0",
     "homepage": "https://",
-    "license": "MIT", 
+    "license": "MIT",
     "author": "Domenico Monaco (https://blog.domenicomonaco.it)",
     "contributors": [
         "Tecnologie per Persone (https://www.tecnologieperpersone.it)"
     ],
-    "private": "true",
     "scripts": {
         "watch": "webpack --watch",
         "build": "webpack",
@@ -49,5 +48,14 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.1.1"
+    },
+    "description": "Minimalist boilerplates inspired to MONK's think *'LESS IS MORE'*",
+    "main": "babel.config.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/domenicomonaco/webpack-boilerplate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/domenicomonaco/webpack-boilerplate/issues"
     }
 }
